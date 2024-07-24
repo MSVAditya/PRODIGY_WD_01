@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000428;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+header.scrolled {
+    background-color: #004e92;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s, background-color 0.3s;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin-top: 50px; /* Adjusted for fixed header */
+}
+
+.product-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.fruit {
+    text-align: center;
+    margin: 0 10px;
+    flex: 1 1 200px;
+    max-width: 200px;
+    transition: transform 0.3s;
+}
+
+.fruit img {
+    width: 100%;
+    margin: 10px;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.fruit img:hover {
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+
+.fruit p {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+.product-info {
+    margin-left: 50px;
+}
+
+.product-info h1 {
+    font-size: 48px;
+    transition: color 0.5s;
+}
+
+.product-info p {
+    font-size: 24px;
+    transition: color 0.5s;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-image {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-image img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.contact-image img:hover {
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+
+h1, h2, h3 {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.delivery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.delivery-text {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.delivery-image {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.delivery-image img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.delivery-image img:hover {
+    transform: scale(1.1);
+    filter: brightness(1);
+}

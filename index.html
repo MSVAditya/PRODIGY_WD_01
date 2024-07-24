@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSV's Apple Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>MSV's Fruit's Store</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Fruits</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="product-image"></div>
+            <div class="product-info">
+                <h1 id="productTitle">Welcome to MSV's Fruit Store</h1>
+                <p id="productDescription">Go to Fruits section to see available Fruits</p>
+                <p id="productPrice"></p>
+                <button id="shopNowButton" style="display: none;">Add to cart</button>
+            </div>
+        </section>
+        <section id="products">
+            <h1>Fruits</h1>
+            <center><h3>Click on a Fruit to see the price</h3></center>
+            <div class="product-container">
+                <div class="product-image">
+                    <div class="fruit">
+                        <a href="#home"><img id="redApple" src="https://www.jiomart.com/images/product/original/590000002/apple-red-delicious-1-kg-product-images-o590000002-p590000002-0-202203141903.jpg?im=Resize=(420,420)" alt="Red Apple" onclick="showPrice('redApple')"></a>
+                        <p>Red Apple</p>
+                    </div>
+                    <div class="fruit">
+                        <a href="#home"><img id="banana" src="https://www.jiomart.com/images/product/original/590000454/banana-robusta-1-kg-product-images-o590000454-p590000454-0-202203152002.jpg?im=Resize=(420,420)" alt="Banana" onclick="showPrice('banana')"></a>
+                        <p>Banana</p>
+                    </div>
+                    <div class="fruit">
+                        <a href="#home"><img id="orange" src="https://www.jiomart.com/images/product/original/590000025/orange-imported-1-kg-product-images-o590000025-p590000025-0-202203171007.jpg?im=Resize=(420,420)" alt="Orange" onclick="showPrice('orange')"></a>
+                        <p>Orange</p>
+                    </div>
+                    <div class="fruit">
+                        <a href="#home"><img id="watermelon" src="https://www.jiomart.com/images/product/original/590000692/watermelon-kiran-2-kg-product-images-o590000692-p590000692-0-202203150240.jpg?im=Resize=(420,420)" alt="Watermelon" onclick="showPrice('watermelon')"></a>
+                        <p>Watermelon</p>
+                    </div>
+                    <div class="fruit">
+                        <a href="#home"><img id="pineapple" src="https://www.bigbasket.com/media/uploads/p/l/10000156_24-fresho-pineapple.jpg" alt="pineapple" onclick="showPrice('pineapple')"></a>
+                        <p>Pineapple</p>
+                    </div>
+                    <div class="fruit">
+                        <a href="#home"><img id="mango" src="https://www.bigbasket.com/media/uploads/p/l/1200345_2-bb-combo-mango-banganpalli.jpg" alt="mango" onclick="showPrice('mango')"></a>
+                        <p>Mango</p>
+                    </div>
+                    <div class="fruit">
+                        <a href="#home"><img id="pomegranate" src="https://www.jiomart.com/images/product/original/590000082/pomegranate-kesar-1-kg-product-images-o590000082-p590000082-0-202203171005.jpg?im=Resize=(420,420)" alt="Pomegranate" onclick="showPrice('pomegranate')"></a>
+                        <p>Pomegranate</p>
+                    </div>
+                    <div class="fruit">
+                        <a href="#home"><img id="grapes" src="https://www.bigbasket.com/media/uploads/p/l/30000482_23-fresho-grapes-red-globe.jpg" alt="Grapes" onclick="showPrice('grapes')"></a>
+                        <p>Grapes</p>
+                    </div>
+                    <div class="fruit">
+                        <a href="#home"><img id="kiwi" src="https://www.bigbasket.com/media/uploads/p/l/40025342_18-fresho-zespri-kiwi-sun-gold.jpg" alt="Kiwi" onclick="showPrice('kiwi')"></a>
+                        <p>Kiwi</p>
+                    </div>
+                    <div class="fruit">
+                        <a href="#home"><img id="papaya" src="https://www.bigbasket.com/media/uploads/p/l/30000605_12-fresho-papaya-raw.jpg" alt="Papaya" onclick="showPrice('papaya')"></a>
+                        <p>Papaya</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="delivery">
+            <h1>Delivery</h1>
+            <div class="delivery-container">
+                <div class="delivery-text">
+                    <p>We deliver fruits to your doorstep</p>
+                    <p>Place your order for your favorite fruits and we will</p>
+                    <p>deliver it to your door in minutes.</p>
+                    <button id="shopNowButton">Order</button>
+                </div>
+                <div class="delivery-image">
+                    <img src="Dlivery.jpg" alt="Delivery Image">
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <div class="contact-container">
+                <div class="contact-details">
+                    <center>
+                        <p class="section-title">Connect with us on social media:</p>
+                        <div class="social-icons">
+                            <div class="social-icon">
+                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/Home/whatsapp-icon.svg" alt="WhatsApp" width="50">
+                            </div>
+                            <div class="social-icon">
+                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/Home/instgram-icon.svg" alt="Instagram" width="50">
+                            </div>
+                            <div class="social-icon">
+                                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/Home/facebook-icon.svg" alt="Facebook" width="50">
+                            </div>
+                        </div>
+                        <p class="section-title">Find Us Here</p>
+                        <p>Funny Street- ThunderCity- Asgord- #3000</p>
+                        <p class="section-title">Call Us and Order</p>
+                        <p>Mobile: +123456789</p>
+                        <p>Landline: 123-456-7890</p>
+                        <p>Email: msv@fruitstore.com</p>
+                    </center>
+                </div>
+                <div class="contact-image">
+                    <img src="call.jpg" alt="Contact Image">
+                </div>
+            </div>
+        </section>        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
