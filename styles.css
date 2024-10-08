@@ -30,6 +30,9 @@ header.scrolled {
     display: flex;
     align-items: center;
 }
+nav{
+    margin-right: 7%;
+}
 
 nav ul {
     list-style: none;
@@ -74,21 +77,23 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align items to the top */
     padding: 20px;
+    gap: 20px; /* Added gap to make sure there's equal space between all items */
 }
 
 .fruit {
     text-align: center;
-    margin: 0 10px;
-    flex: 1 1 200px;
-    max-width: 200px;
+    margin: 10px; /* Increased margin for better spacing */
+    flex: 0 1 220px; /* Ensured each fruit takes similar space */
+    max-width: 220px; /* Ensured maximum width consistency */
     transition: transform 0.3s;
 }
 
 .fruit img {
     width: 100%;
-    margin: 10px;
+    height: auto; /* Ensured images maintain their aspect ratio */
+    margin: 10px 0; /* Adjusted margin for spacing */
     cursor: pointer;
     display: block;
     transition: transform 0.3s, filter 0.3s;
@@ -102,21 +107,9 @@ nav ul li a:hover {
 .fruit p {
     margin: 10px 0 0;
     font-size: 18px;
+    color: white; /* Optional: you can change text color to fit your background */
 }
 
-.product-info {
-    margin-left: 50px;
-}
-
-.product-info h1 {
-    font-size: 48px;
-    transition: color 0.5s;
-}
-
-.product-info p {
-    font-size: 24px;
-    transition: color 0.5s;
-}
 
 button {
     padding: 10px 20px;
